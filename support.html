@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Support — Letterfly</title>
+<meta name="description" content="Support and frequently asked questions for Letterfly, a private letter-writing diary for couples." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper: #fffdfc;
+    --band: #fbf3f0;
+    --ink: #221b1d;
+    --ink-soft: #5a4e51;
+    --accent: #f2a9c4;
+    --accent-deep: #c9678b;
+    --hairline: #ead9de;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color: var(--accent-deep);
+    text-decoration-color: var(--accent);
+    text-underline-offset: 3px;
+  }
+  a:hover { text-decoration-color: var(--accent-deep); }
+  a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent-deep);
+    outline-offset: 3px;
+  }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  header.hero {
+    padding: 72px 0 56px;
+    text-align: center;
+  }
+
+  .seal {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 28px;
+    display: block;
+  }
+
+  .wordmark {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(34px, 6vw, 46px);
+    line-height: 1.1;
+    margin: 0 0 18px;
+  }
+
+  .intro p {
+    font-size: 18px;
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin: 0 auto;
+  }
+
+  main { padding-bottom: 24px; }
+
+  section {
+    padding: 40px 0;
+    border-top: 1px solid var(--hairline);
+  }
+
+  section h2 {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
+
+  p { margin: 0 0 16px; max-width: 62ch; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 8px; max-width: 60ch; }
+  li::marker { color: var(--accent-deep); }
+
+  details {
+    border-bottom: 1px solid var(--hairline);
+    padding: 18px 0;
+  }
+  details:first-of-type { border-top: 1px solid var(--hairline); }
+
+  summary {
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  summary::-webkit-details-marker { display: none; }
+
+  summary::after {
+    content: '+';
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    color: var(--accent-deep);
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+  }
+  details[open] summary::after {
+    content: '–';
+  }
+
+  details p {
+    margin-top: 14px;
+    color: var(--ink-soft);
+  }
+
+  .band {
+    background: var(--band);
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .band .wrap { padding-top: 40px; padding-bottom: 40px; text-align: center; }
+
+  .contact-card {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+    background: var(--paper);
+    border: 1px solid var(--hairline);
+    border-radius: 14px;
+    padding: 14px 20px;
+    font-weight: 500;
+  }
+
+  footer {
+    padding: 56px 0 80px;
+    text-align: center;
+  }
+  .signoff {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+  .footer-mark {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  @media (max-width: 480px) {
+    header.hero { padding: 56px 0 40px; }
+    section { padding: 32px 0; }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #17151a;
+      --band: #1f1b20;
+      --ink: #f4eef1;
+      --ink-soft: #b8aab0;
+      --accent: #f2a9c4;
+      --accent-deep: #f7bfd4;
+      --hairline: #34292e;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <svg class="seal" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="28" cy="28" r="28" fill="var(--accent)"/>
+      <path d="M14 20.5C14 19.1193 15.1193 18 16.5 18H39.5C40.8807 18 42 19.1193 42 20.5V35.5C42 36.8807 40.8807 38 39.5 38H16.5C15.1193 38 14 36.8807 14 35.5V20.5Z" stroke="#221B1D" stroke-width="1.4"/>
+      <path d="M14.5 19.5L28 30L41.5 19.5" stroke="#221B1D" stroke-width="1.4" stroke-linecap="round"/>
+    </svg>
+    <div class="wordmark">Letterfly</div>
+    <h1>Support</h1>
+    <div class="intro">
+      <p>Stuck on something, or just have a question? Look below — and if it's not there, write to us directly.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>Getting started</h2>
+
+      <details open>
+        <summary>How do I connect with my partner?</summary>
+        <p>After signing in, you'll get your own invite code. Share it with your partner however you like — Copy or Share works from the pairing screen — and have them enter it on their own device. Once they join, you're paired for good.</p>
+      </details>
+
+      <details>
+        <summary>Can I use Letterfly on my own, without a partner?</summary>
+        <p>Letterfly is built around a pair — letters, the calendar, and the memories map only make sense once you're connected to someone. You'll need a partner to get past the pairing screen.</p>
+      </details>
+
+      <details>
+        <summary>Can I change my partner later?</summary>
+        <p>Not from within the app right now. If you need to re-pair with a different account, write to us at the address below and we'll help.</p>
+      </details>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Letters</h2>
+
+      <details>
+        <summary>What's the difference between a text and a voice letter?</summary>
+        <p>When you write a new letter, you can choose either mode. A text letter is written; a voice letter is recorded right in the app. Either can still include a photo, a mood, a gift sticker, and a location.</p>
+      </details>
+
+      <details>
+        <summary>How do Time Capsule letters work?</summary>
+        <p>When writing a letter, you can schedule it to unlock on a future date — either one you pick, or one tied to a shared event like an anniversary. Your partner will see that a letter is waiting, but won't be able to open it until the date arrives.</p>
+      </details>
+
+      <details>
+        <summary>Can I edit or delete a letter after sending it?</summary>
+        <p>Yes. Open the letter and use the menu in the top corner to edit or delete it. Deleting a letter also removes any photo or voice recording attached to it.</p>
+      </details>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Notifications</h2>
+
+      <details>
+        <summary>I'm not getting notified when my partner writes</summary>
+        <p>Check that notifications are allowed for Letterfly in your phone's Settings app. If they're already on and you're still not seeing them, try opening the app once so it can refresh — then write to us if it keeps happening.</p>
+      </details>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Account & privacy</h2>
+
+      <details>
+        <summary>How do I delete my account and my data?</summary>
+        <p>Write to us at the address below and we'll remove your account, your letters, your shared calendar, and your pairing within a reasonable time. See our <a href="https://naazx.github.io/letterfly-legal/">Privacy Policy</a> for details on what we store and why.</p>
+      </details>
+
+      <details>
+        <summary>Who can see what I write?</summary>
+        <p>Only you and the partner you're paired with. There's no public feed, no discovery, and no one else with access to your letters.</p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<div class="band">
+  <div class="wrap">
+    <p style="margin: 0 auto 20px;">Didn't find what you needed? We read every message.</p>
+    <div class="contact-card">✉️ nazardydyn83@gmail.com</div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="signoff">With care,</div>
+    <div class="footer-mark">The Letterfly team</div>
+  </div>
+</footer>
+
+</body>
+</html>
