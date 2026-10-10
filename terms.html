@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Terms of Use — Letterfly</title>
+<meta name="description" content="Terms of Use for Letterfly, a private letter-writing diary for couples." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper: #fffdfc;
+    --band: #fbf3f0;
+    --ink: #221b1d;
+    --ink-soft: #5a4e51;
+    --accent: #f2a9c4;
+    --accent-deep: #c9678b;
+    --hairline: #ead9de;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color: var(--accent-deep);
+    text-decoration-color: var(--accent);
+    text-underline-offset: 3px;
+  }
+  a:hover { text-decoration-color: var(--accent-deep); }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent-deep);
+    outline-offset: 3px;
+  }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  header.hero {
+    padding: 72px 0 32px;
+    text-align: center;
+  }
+
+  .seal {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 28px;
+    display: block;
+  }
+
+  .wordmark {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(34px, 6vw, 46px);
+    line-height: 1.1;
+    margin: 0 0 18px;
+  }
+
+  .dateline {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--ink-soft);
+    font-size: 16px;
+  }
+
+  nav.pages {
+    padding: 24px 0 8px;
+    text-align: center;
+    font-size: 15px;
+  }
+  nav.pages a {
+    margin: 0 10px;
+    font-weight: 500;
+  }
+  nav.pages a[aria-current="page"] {
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .intro { padding: 0 0 8px; }
+  .intro p { font-size: 18px; color: var(--ink-soft); }
+
+  main { padding-bottom: 24px; }
+
+  section {
+    padding: 40px 0;
+    border-top: 1px solid var(--hairline);
+  }
+
+  section h2 {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0 0 18px;
+  }
+
+  section h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 24px 0 8px;
+  }
+
+  p { margin: 0 0 16px; max-width: 62ch; }
+
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 8px; max-width: 60ch; }
+  li::marker { color: var(--accent-deep); }
+
+  .callout {
+    background: var(--band);
+    border: 1px solid var(--hairline);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 0 0 16px;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  .band {
+    background: var(--band);
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .band .wrap { padding-top: 40px; padding-bottom: 40px; }
+
+  .contact-card {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+    background: var(--paper);
+    border: 1px solid var(--hairline);
+    border-radius: 14px;
+    padding: 14px 20px;
+    font-weight: 500;
+  }
+
+  footer {
+    padding: 56px 0 80px;
+    text-align: center;
+  }
+
+  .signoff {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+
+  .footer-mark {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  @media (max-width: 480px) {
+    header.hero { padding: 56px 0 24px; }
+    section { padding: 32px 0; }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #17151a;
+      --band: #1f1b20;
+      --ink: #f4eef1;
+      --ink-soft: #b8aab0;
+      --accent: #f2a9c4;
+      --accent-deep: #f7bfd4;
+      --hairline: #34292e;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <svg class="seal" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="28" cy="28" r="28" fill="var(--accent)"/>
+      <path d="M14 20.5C14 19.1193 15.1193 18 16.5 18H39.5C40.8807 18 42 19.1193 42 20.5V35.5C42 36.8807 40.8807 38 39.5 38H16.5C15.1193 38 14 36.8807 14 35.5V20.5Z" stroke="#221B1D" stroke-width="1.4"/>
+      <path d="M14.5 19.5L28 30L41.5 19.5" stroke="#221B1D" stroke-width="1.4" stroke-linecap="round"/>
+    </svg>
+    <div class="wordmark">Letterfly</div>
+    <h1>Terms of Use</h1>
+    <div class="dateline">Last updated October 10, 2026</div>
+  </div>
+</header>
+
+<nav class="pages" aria-label="Legal pages">
+  <a href="./">Privacy Policy</a>
+  <a href="terms.html" aria-current="page">Terms of Use</a>
+  <a href="support.html">Support</a>
+</nav>
+
+<main>
+  <div class="wrap intro">
+    <p>Letterfly is a private space for you and your partner to write to each other. These terms explain what we expect from you, what you can expect from us, and — because Letterfly lets you write to another person — how we keep that space safe.</p>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>Agreeing to these terms</h2>
+      <p>By creating an account and using Letterfly, you agree to these Terms of Use and to our <a href="./">Privacy Policy</a>. If you don't agree, please don't use the app.</p>
+      <p>Letterfly is intended for users capable of entering a binding agreement in their place of residence, and is not directed at children under 13.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Zero tolerance for objectionable content and abuse</h2>
+      <div class="callout">
+        <p><strong>Letterfly has zero tolerance for objectionable content or abusive behavior of any kind</strong> — this includes, but isn't limited to, threats, harassment, hate speech, sexually explicit content, and anything intended to harm, degrade, or endanger your partner or anyone else.</p>
+      </div>
+      <p>You agree not to use Letterfly to send content that is illegal, hateful, harassing, threatening, sexually explicit, or otherwise objectionable. Letters you write may be automatically screened for language that violates this policy, and may be blocked from sending as a result.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Reporting objectionable content</h2>
+      <p>If you receive a letter that you believe violates these terms, you can report it directly from the letter using the <strong>Report</strong> option. Reporting sends us the letter and the reason for the report so we can review it.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Blocking an abusive partner</h2>
+      <p>You can block your partner at any time from your profile. Blocking is immediate and:</p>
+      <ul>
+        <li>Ends your pairing right away</li>
+        <li>Removes their letters, photos, and shared content from your view instantly</li>
+        <li>Prevents them from pairing with you again using the same account</li>
+        <li>Notifies us so we can review the account you blocked</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>How we respond</h2>
+      <p>We review every report and every block. Where content violates these terms, we remove it; where an account's behavior violates these terms, we take action against that account — up to and including permanently ejecting the user from Letterfly. We aim to act on reports within 24 hours of receiving them.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Your content</h2>
+      <p>You own what you write. We don't claim ownership over your letters, photos, or recordings — we store and transmit them solely so Letterfly can show them to you and your paired partner, as described in our <a href="./">Privacy Policy</a>.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Suspending or ending an account</h2>
+      <p>We may suspend or terminate your access to Letterfly, without notice, if you violate these terms — in particular the zero-tolerance policy above. You can also delete your own account at any time; see our <a href="support.html">Support</a> page for how.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Changes to these terms</h2>
+      <p>If we update these terms, the change will appear on this page with a new "last updated" date above. Continuing to use Letterfly after a change means you accept the updated terms.</p>
+    </div>
+  </section>
+</main>
+
+<div class="band">
+  <div class="wrap" style="text-align:center;">
+    <p style="margin-bottom:20px;">Questions about these terms, or want to report something? Write to us.</p>
+    <div class="contact-card">✉️ nazardydyn83@gmail.com</div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="signoff">With care,</div>
+    <div class="footer-mark">The Letterfly team</div>
+  </div>
+</footer>
+
+</body>
+</html>
